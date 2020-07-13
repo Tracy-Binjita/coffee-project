@@ -1,4 +1,33 @@
+body{
+width: 85%;
+margin:auto;
+background-color: #F4BEA6;
+color: #2B2B2B; }
 
 h1 {
-    color:blue;
+    color:#966056;
+    text-align:center;
+    font-family: 'GFS Didot', serif;
+    font-size: 40px;
+    padding-top: 15px;
 }
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+    font-family: 'Source Code Pro', monospace;}
+
+h2, h3, h4, h5, h6 {
+    color: #966056;}
+
+hr {
+width: 40%;
+}
+#light-section {
+background-color: #FFF0EA;
+padding-bottom: 25px;
+margin-bottom: 80px;}
+
+

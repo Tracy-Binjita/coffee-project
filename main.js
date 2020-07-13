@@ -1,4 +1,8 @@
-"use strict"
+"use strict";
+
+// (function() {
+//     document.getElementsByTagName("h1").style.color = "blue"
+// })();
 
 var searchBar = document.getElementById("coffee-search")
 searchBar.addEventListener("input", updateCoffees)
