@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+<!--   // <link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 <body>
-<h1>Coffee!</h1>
+<h1> Coffee!</h1>
 <form>
     <label>Coffee Name</label>
     <label for="roast-selection"></label>
@@ -23,10 +23,25 @@
     <input id="submit" type="submit"/>
 </form>
 
+<!--// add a coffee section-->
+    <h3>Add a coffee</h3>
+    <form>
+        <h6>Roast</h6>
+        <label for="roast-selection"></label>
+        <select id="new-roast-selection">
+            <option value="light">light</option>
+            <option value="medium">medium</option>
+            <option value="dark">dark</option>
+        </select>
+        <h6>Coffee Name</h6>
+        <label for="new-coffee-name"></label>
+        <input id="new-coffee-name" type="text">
+        <input id="submit1" type="submit">
+    </form>
+
 <div id="coffees"></div>
 
 <script src="main.js"></script>
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
