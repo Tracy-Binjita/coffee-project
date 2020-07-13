@@ -2,11 +2,11 @@
 
 
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee"><div>';
-    html += '<td><div>' + coffee.id + '</div></td>';
-    html += '<td><div>' + coffee.name + '</div></td>';
-    html += '<td><div>' + coffee.roast + '</div></td>';
-    html += '<div></tr>';
+    var html = '<ul class="coffee" id="coffee"><div>';
+    html += '<div hidden>' + coffee.id + '</div>';
+    html += '<li><div>' + coffee.name + '</div></li>';
+    html += '<li><div>' + coffee.roast + '</div></li>';
+    html += '<div></ul>';
     return html;
 }
 
@@ -28,7 +28,28 @@ function updateCoffees(e) {
         }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
+
+    // Declare variables
+    var input, filter, ul, li, div, i, txtValue;
+    input = document.getElementById('coffee-search');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("coffee");
+    li = ul.getElementsByTagName('li');
+
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        div = li[i].getElementsByTagName("div")[0];
+        txtValue = div.textContent[0] || div.innerText[0];
+        if (txtValue.toUpperCase().indexOf(filter) === coffees.name) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
 }
+
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
