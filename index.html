@@ -14,16 +14,12 @@
     <label>Coffee Name</label>
     <label for="roast-selection"></label>
     <select id="roast-selection">
-        <option>light</option>
-        <option>medium</option>
-        <option>dark</option>
+        <option value="">all</option>
+        <option value="light">light</option>
+        <option value="medium">medium</option>
+        <option value="dark">dark</option>
     </select>
-    <input type="text" id="coffee-search" onkeyup="updateCoffees(e)" placeholder="Search for coffees..">
-
-    <input id="submit" type="submit"/>
-</form>
-
-<div id="coffees">
+    <input type="text" id="coffee-search" placeholder="Search for coffees..">
     <!--        <thead>-->
     <!--            <tr>-->
     <!--&lt;!&ndash;                <th hidden>ID</th>&ndash;&gt;-->
@@ -32,6 +28,11 @@
     <!--            </tr>-->
     <!--        </thead>-->
     <!--        <tbody id="coffees"></tbody>-->
+    <input id="submit" type="submit"/>
+</form>
+
+<div id="coffees">
+
 </div>
 
 <script src="main.js"></script>
