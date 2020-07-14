@@ -14,7 +14,7 @@ function renderCoffee(coffee) { 
     html += '<h5>' + coffee.name + '</h5>'; 
     html += '<h6 class="float-right align-self-center pl-2">' + coffee.roast + '</h6>'; 
     html += '</div>'; 
-    return html; 
+    return html;
 }
 
 function renderCoffees(coffees) {
