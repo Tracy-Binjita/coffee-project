@@ -45,9 +45,10 @@ a:hover {
 }
 
 #light-section {
-background-color: #FFF0EA;
-padding-bottom: 25px;
-margin-bottom: 80px;}
+    background-color: #FFF0EA;
+    padding-bottom: 25px;
+    margin-bottom: 80px;
+}
 
 #insta-feed {
     display: flex;}
@@ -58,3 +59,7 @@ margin-bottom: 80px;}
     margin-left: auto;
     margin-right: auto;
    }
+
+.customer-pics {
+    width: 80%;
+}
