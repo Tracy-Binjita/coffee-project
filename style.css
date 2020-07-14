@@ -14,17 +14,28 @@ h1 {
 
 h4 {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 h6 {
-    font-family: 'Source Code Pro', monospace;}
+    font-family: 'Source Code Pro', monospace;
+}
 
 h2, h3, h4, h5, h6 {
-    color: #966056;}
+    color: #966056;
+}
 
 hr {
 width: 40%;
 }
+
+#submit, #submit1 {
+    background-color: #F4BEA6;
+    border: none;
+    color: #966056;
+    font-weight: bold;
+}
+
 #light-section {
 background-color: #FFF0EA;
 padding-bottom: 25px;

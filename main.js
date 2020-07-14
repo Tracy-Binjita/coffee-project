@@ -8,13 +8,13 @@ var searchBar = document.getElementById("coffee-search")
 searchBar.addEventListener("input", updateCoffees)
 document.getElementById("roast-selection").addEventListener("change", updateCoffees)
 
-function renderCoffee(coffee) {
-    var html = '<div class="coffee" id="coffee">';
-    html += '<div hidden>' + coffee.id + '</div>';
-    html += '<h5>' + coffee.name + '</h5>';
-    html += '<h6>' + coffee.roast + '</h6>';
-    html += '</div>';
-    return html;
+function renderCoffee(coffee) { 
+    var html = '<div class="coffee d-flex row col-6" id="coffee">'; 
+    html += '<div hidden>' + "" + coffee.id + '</div>'; 
+    html += '<h5>' + coffee.name + '</h5>'; 
+    html += '<h6 class="align-items-baseline">' + coffee.roast + '</h6>'; 
+    html += '</div>'; 
+    return html; 
 }
 
 function renderCoffees(coffees) {

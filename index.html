@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat&family=Source+Code+Pro&display=swap" rel="stylesheet">
@@ -17,39 +18,47 @@
 
 
 <div class="row pt-5 pl-4" id="light-section">
-<div class="col-6" id="coffees"></div>
+    <aside class="col-6 row" style="height: 80%" id="coffees"> 
+        <div class="col-6">
+        </div> 
+    </aside>
+
 
 <div class="col-6">
 <form>
     <h4>Find your Favorite Coffee</h4>
+    <hr>
 <!--    <label for="roast-selection"></label>-->
     <h6>Roast</h6>
-    <select id="roast-selection">
+    <select id="roast-selection" class="w-100">
         <option value="">all</option>
         <option value="light">light</option>
         <option value="medium">medium</option>
         <option value="dark">dark</option>
     </select>
-    <h6>Coffee Name</h6>
+    <h6 class="mt-4">Coffee Name</h6>
     <input type="text" id="coffee-search" placeholder="Search for coffees" class="input-group">
-    <input id="submit" type="submit"/>
+    <input class="w-100 mt-3" id="submit" type="submit"/>
 </form>
 
 <!--// add a coffee section-->
+    <div class="mt-4">
     <h4>Add a Coffee</h4>
+    <hr>
     <form>
         <h6>Roast</h6>
 <!--        <label for="roast-selection"></label>-->
-        <select id="new-roast-selection">
+        <select id="new-roast-selection" class="w-100">
             <option value="light">light</option>
             <option value="medium">medium</option>
             <option value="dark">dark</option>
         </select>
-        <h6>Name Your Coffee</h6>
         <label for="new-coffee-name"></label>
-        <input id="new-coffee-name" type="text">
-        <input id="submit1" type="submit">
+        <h6 class="mt-0" >Name Your Coffee</h6>
+        <input id="new-coffee-name" class="w-100" type="text">
+        <input class="w-100 mt-3" id="submit1" type="submit">
     </form>
+    </div>
 
 <!--    <video width="320" height="240" muted autoplay loop>-->
 <!--        <source src="coffee-landscape_SLOW_FINAL.mp4" type="video/mp4">-->
@@ -57,7 +66,8 @@
 <!--        Your browser does not support the video tag.-->
 <!--    </video>-->
 <br>
-<h4> Tag Us On Instagram! </h4>
+<h4> Tag Us On Instagram! <i class="fab fa-instagram"></i></h4>
+<hr>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -67,7 +77,7 @@
                 <img class="d-block w-100" src="tracy-coffee.png" class="customer-pics" alt="tracy-the-coffee-queen">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="binijta-coffee.JPG" alt="binijta-the-coffee-princess">
+                <img class="d-block w-100" src="binjita-coffee.JPG" alt="binjita-the-coffee-princess">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
