@@ -29,6 +29,14 @@ hr {
 width: 40%;
 }
 
+a {
+    color: #966056;
+}
+
+a:hover {
+   color: darkgray;
+}
+
 #submit, #submit1 {
     background-color: #F4BEA6;
     border: none;
