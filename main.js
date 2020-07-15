@@ -1,9 +1,5 @@
 "use strict";
 
-// (function() {
-//     document.getElementsByTagName("h1").style.color = "blue"
-// })();
-
 // Puts coffee data into table. Added bootstrap classes as well.
 function renderCoffee(coffee) { 
     var html = '<div class="coffee d-flex row col-6" id="coffee">'; 
