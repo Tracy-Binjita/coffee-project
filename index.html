@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,103 +11,108 @@
     <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
+    <!--Logo-->
+    <div class="d-flex">
+        <img class="hyperion-logo align-self-center" src="HyperionCoffeeLogo.png" alt="Hyperion-logo">
+    </div>
 
-<div class="d-flex">
-    <img class="hyperion-logo align-self-center" src="HyperionCoffeeLogo.png" alt="Hyperion-logo">
-</div>
+
+    <!--Coffee List-->
+    <div class="row pt-5 pl-4" id="light-section">
+
+        <!--Left Panel-->
+        <aside class="col-6 row" style="height: 80%" id="coffees"> 
+            <div class="col-6">
+            </div> 
+        </aside>
 
 
-<!--Coffee List-->
-<div class="row pt-5 pl-4" id="light-section">
-    <aside class="col-6 row" style="height: 80%" id="coffees"> 
+
+        <!--Forms with Tabs-->
         <div class="col-6">
-        </div> 
-    </aside>
+            <ul class="nav nav-tabs row" id="myTab" role="tablist">
+                <li class="nav-item col-6" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Find your Favorite Coffee</a>
+                </li>
+                <li class="nav-item col-6" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Add your Favorite Coffee</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="mt-4">
+                    <form>
+                        <h6>Roast</h6>
+                        <select id="roast-selection" class="w-100">
+                            <option value="">all</option>
+                            <option value="light">light</option>
+                            <option value="medium">medium</option>
+                            <option value="dark">dark</option>
+                        </select>
+                        <h6 class="mt-4">Coffee Name</h6>
+                    <input type="text" id="coffee-search" placeholder="Search for coffees" class="input-group">
+                    <input class="w-100 mt-3" id="submit" type="submit"/>
+                    </form>
+                    </div>
+                </div>
 
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <!--// add a coffee section-->
+                    <div class="mt-4">
+                        <form>
+                            <h6>Roast</h6>
+                            <select id="new-roast-selection" class="w-100">
+                                <option value="light">light</option>
+                                <option value="medium">medium</option>
+                                <option value="dark">dark</option>
+                            </select>
+                            <label for="new-coffee-name"></label>
+                            <h6 class="mt-0" >Name Your Coffee</h6>
+                            <input id="new-coffee-name" class="w-100" type="text" placeholder="New coffee name">
+                            <input class="w-100 mt-3" id="submit1" type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div>
 
-
-<!--Right Panel-->
-<div class="col-6">
-    <ul class="nav nav-tabs row" id="myTab" role="tablist">
-        <li class="nav-item col-6" role="presentation">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Find your Favorite Coffee</a>
-        </li>
-        <li class="nav-item col-6" role="presentation">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Add your Favorite Coffee</a>
-        </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="mt-4">
-            <form>
-                <h6>Roast</h6>
-                <select id="roast-selection" class="w-100">
-                    <option value="">all</option>
-                    <option value="light">light</option>
-                    <option value="medium">medium</option>
-                    <option value="dark">dark</option>
-                </select>
-                <h6 class="mt-4">Coffee Name</h6>
-            <input type="text" id="coffee-search" placeholder="Search for coffees" class="input-group">
-            <input class="w-100 mt-3" id="submit" type="submit"/>
-            </form>
-            </div>
-
-        </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <!--// add a coffee section-->
-            <div class="mt-4">
-                <form>
-                    <h6>Roast</h6>
-                    <select id="new-roast-selection" class="w-100">
-                        <option value="light">light</option>
-                        <option value="medium">medium</option>
-                        <option value="dark">dark</option>
-                    </select>
-                    <label for="new-coffee-name"></label>
-                    <h6 class="mt-0" >Name Your Coffee</h6>
-                    <input id="new-coffee-name" class="w-100" type="text" placeholder="New coffee name">
-                    <input class="w-100 mt-3" id="submit1" type="submit">
-                </form>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div>
-<br>
-<h4 class="text-center mt-2"> Tag Us On Instagram! <i class="fab fa-instagram"></i></h4>
-<hr>
-<br>
-        <div id="insta-feed" class="mt-2">
-            <div class="">
-                <img src="coffee.jpg" class="customer-pics mx-4" alt="vanessa-the-coffee-fiend" alt="First slide">
-            </div>
-            <div class="">
-                <img src="tracy-coffee.png" class="customer-pics mx-4" alt="tracy-the-coffee-queen">
-            </div>
-            <div class="">
-                <img src="binjita-coffee.JPG" class="customer-pics mx-4" alt="binjita-the-coffee-princess">
-            </div>
-            <div class="">
-                <img src="barista.png" class="customer-pics mx-4" alt="barista" alt="First slide">
-            </div>
-            <div class="">
-                <img src="white-ceramic-cup-on-saucer-beside-flower-vase-on-table-3714960.jpg" class="customer-pics mx-4" alt="latte" alt="First slide">
+    <!--Instagram Portion-->
+        <br>
+        <h4 class="text-center mt-4"> Tag Us On Instagram! <i class="fab fa-instagram"></i></h4>
+        <hr>
+        <br>
+                <div id="insta-feed" class="mt-2">
+                    <div class="">
+                        <img src="coffee.jpg" class="customer-pics mx-4" alt="vanessa-the-coffee-fiend">
+                    </div>
+                    <div class="">
+                        <img src="tracy-coffee.png" class="customer-pics mx-4" alt="tracy-the-coffee-queen">
+                    </div>
+                    <div class="">
+                        <img src="binjita-coffee.JPG" class="customer-pics mx-4" alt="binjita-the-coffee-princess">
+                    </div>
+                    <div class="">
+                        <img src="barista.png" class="customer-pics mx-4" alt="barista">
+                    </div>
+                    <div class="">
+                        <img src="white-ceramic-cup-on-saucer-beside-flower-vase-on-table-3714960.jpg" class="customer-pics mx-4" alt="latte">
+                    </div>
+                </div>
             </div>
     </div>
-</div>
-
-<script src="main.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <!--JS Scripts-->
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 </body>
 </html>
