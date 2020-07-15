@@ -4,10 +4,7 @@
 //     document.getElementsByTagName("h1").style.color = "blue"
 // })();
 
-var searchBar = document.getElementById("coffee-search")
-searchBar.addEventListener("input", updateCoffees)
-document.getElementById("roast-selection").addEventListener("change", updateCoffees)
-
+// Puts coffee data into table. Added bootstrap classes as well.
 function renderCoffee(coffee) { 
     var html = '<div class="coffee d-flex row col-6" id="coffee">'; 
     html += '<div hidden>' + "" + coffee.id + '</div>'; 
@@ -17,6 +14,7 @@ function renderCoffee(coffee) { 
     return html;
 }
 
+// Converts coffee table into strings.
 function renderCoffees(coffees) {
     var html = '';
     for (var i = 0; i <= coffees.length - 1; i++) {
@@ -26,6 +24,9 @@ function renderCoffees(coffees) {
 }
 
 //Filters by roast selection then searches by input. Calls function every time a new letter is typed using eventListeners.
+var searchBar = document.getElementById("coffee-search")
+searchBar.addEventListener("input", updateCoffees)
+document.getElementById("roast-selection").addEventListener("change", updateCoffees)
 
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
@@ -42,7 +43,7 @@ function updateCoffees(e) {
     coffeeList.innerHTML = renderCoffees(filteredCoffees);
 }
 
-// for a  add coffee section
+// for add a coffee section
 function addNewCoffee (e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     let coffeeName = newCoffeeName.value;
@@ -58,6 +59,7 @@ var newRoastSelection = document.querySelector('#new-roast-selection');
 var newCoffeeName = document.querySelector('#new-coffee-name');
 submitButton.addEventListener('click', addNewCoffee);
 
+// Coffee Table Content
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
     var coffees = [
         {id: 1, name: 'Light City', roast: 'light'},
